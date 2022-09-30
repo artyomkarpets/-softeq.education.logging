@@ -125,6 +125,19 @@
 						},
 						{
 							"name": "Get user info",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var responseJson = pm.response.json();\r",
+											"pm.environment.set(\"userId\", responseJson.sub);\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"auth": {
 									"type": "bearer",
@@ -194,6 +207,17 @@
 			"item": [
 				{
 					"name": "Get Users",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -330,18 +354,57 @@
 				{
 					"name": "Forecast",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7060/WeatherForecast/GetAnonimus",
-							"protocol": "https",
+							"raw": "{{gateway-url}}/WeatherForecast",
 							"host": [
-								"localhost"
+								"{{gateway-url}}"
 							],
-							"port": "7060",
 							"path": [
-								"WeatherForecast",
-								"GetAnonimus"
+								"WeatherForecast"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gateway",
+			"item": [
+				{
+					"name": "Get users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{gateway-url}}/",
+							"host": [
+								"{{gateway-url}}"
+							],
+							"path": [
+								""
 							]
 						}
 					},
