@@ -53,7 +53,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialsSystem.ApiGatewayServ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrialsSystem.ContentService", "TrialsSystem.ContentService", "{64C8A065-8077-4764-870B-2A67547B497F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialsSystem.QuestionnairesService.Api", "UserAnswers\TrialsSystem.QuestionnairesService\TrialsSystem.QuestionnairesService.Api\TrialsSystem.QuestionnairesService.Api.csproj", "{29FE0A70-86E8-4A8E-B0FF-CFF5BD1B2ED1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialsSystem.QuestionnairesService.Api", "UserAnswers\TrialsSystem.QuestionnairesService\TrialsSystem.QuestionnairesService.Api\TrialsSystem.QuestionnairesService.Api.csproj", "{29FE0A70-86E8-4A8E-B0FF-CFF5BD1B2ED1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialsSystem.QuestionnairesService.Domain", "UserAnswers\TrialsSystem.QuestionnairesService\TrialsSystem.QuestionnairesService.Domain\TrialsSystem.QuestionnairesService.Domain.csproj", "{DD8789E5-E8F9-4813-A261-50F4AEE5BA6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialsSystem.QuestionnairesService.Infrastructure", "UserAnswers\TrialsSystem.QuestionnairesService\TrialsSystem.QuestionnairesService.Infrastructure\TrialsSystem.QuestionnairesService.Infrastructure.csproj", "{74F40794-6D9F-47BA-A4F1-2D7A1380615E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +129,14 @@ Global
 		{29FE0A70-86E8-4A8E-B0FF-CFF5BD1B2ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29FE0A70-86E8-4A8E-B0FF-CFF5BD1B2ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29FE0A70-86E8-4A8E-B0FF-CFF5BD1B2ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD8789E5-E8F9-4813-A261-50F4AEE5BA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8789E5-E8F9-4813-A261-50F4AEE5BA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8789E5-E8F9-4813-A261-50F4AEE5BA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8789E5-E8F9-4813-A261-50F4AEE5BA6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F40794-6D9F-47BA-A4F1-2D7A1380615E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F40794-6D9F-47BA-A4F1-2D7A1380615E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F40794-6D9F-47BA-A4F1-2D7A1380615E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F40794-6D9F-47BA-A4F1-2D7A1380615E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +164,8 @@ Global
 		{986291B1-AF42-40FF-90C7-0406AB3EC38C} = {B079D41D-161F-4C71-B597-F3759ADDCB54}
 		{64C8A065-8077-4764-870B-2A67547B497F} = {B48F6B56-8931-45A1-B5E8-4D7BB308E2DC}
 		{29FE0A70-86E8-4A8E-B0FF-CFF5BD1B2ED1} = {84537A08-448A-4E25-90C7-DA3A15956BBF}
+		{DD8789E5-E8F9-4813-A261-50F4AEE5BA6E} = {84537A08-448A-4E25-90C7-DA3A15956BBF}
+		{74F40794-6D9F-47BA-A4F1-2D7A1380615E} = {84537A08-448A-4E25-90C7-DA3A15956BBF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1BA20357-52AA-484F-BC0C-7AD5880BBE7B}

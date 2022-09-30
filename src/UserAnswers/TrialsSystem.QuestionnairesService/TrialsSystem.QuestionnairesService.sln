@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialsSystem.QuestionnairesService.Api", "TrialsSystem.QuestionnairesService.Api\TrialsSystem.QuestionnairesService.Api.csproj", "{10C12812-2D4F-4A3F-BB14-BA53EEF8A993}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialsSystem.QuestionnairesService.Domain", "TrialsSystem.QuestionnairesService.Domain\TrialsSystem.QuestionnairesService.Domain.csproj", "{7BFC54D7-3374-4604-9595-17142866DF4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialsSystem.QuestionnairesService.Infrastructure", "TrialsSystem.QuestionnairesService.Infrastructure\TrialsSystem.QuestionnairesService.Infrastructure.csproj", "{D509F064-DA00-419A-965B-1D4CC8288268}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{10C12812-2D4F-4A3F-BB14-BA53EEF8A993}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10C12812-2D4F-4A3F-BB14-BA53EEF8A993}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10C12812-2D4F-4A3F-BB14-BA53EEF8A993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BFC54D7-3374-4604-9595-17142866DF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFC54D7-3374-4604-9595-17142866DF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFC54D7-3374-4604-9595-17142866DF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFC54D7-3374-4604-9595-17142866DF4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D509F064-DA00-419A-965B-1D4CC8288268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D509F064-DA00-419A-965B-1D4CC8288268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D509F064-DA00-419A-965B-1D4CC8288268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D509F064-DA00-419A-965B-1D4CC8288268}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
