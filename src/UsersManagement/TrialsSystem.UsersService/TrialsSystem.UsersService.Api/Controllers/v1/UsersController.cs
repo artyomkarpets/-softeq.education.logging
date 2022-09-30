@@ -7,6 +7,7 @@ using TrialsSystem.UsersService.Api.Application.Queries.UserQueries;
 using TrialsSystem.UsersService.Api.Filters;
 using TrialSystem.Shared.UsersService.Models;
 using Microsoft.AspNetCore.Mvc.Routing;
+using TrialsSystem.UsersService.Infrastructure.Helpers;
 
 namespace TrialsSystem.UsersService.Api.Controllers.v1
 {
@@ -21,12 +22,18 @@ namespace TrialsSystem.UsersService.Api.Controllers.v1
         private readonly IMediator _mediator;
         private readonly IUrlHelperFactory _factory;
         private readonly ILogger<UsersController> _logger;
+        private readonly IIdentityHelper _identityHelper;
 
-        public UsersController(IMediator mediator, IUrlHelperFactory factory, ILogger<UsersController> logger)
+        public UsersController(IMediator mediator,
+                               IUrlHelperFactory factory,
+                               ILogger<UsersController> logger,
+                               IIdentityHelper identityHelper)
         {
             _mediator = mediator;
             _factory = factory;
             _logger = logger;
+            _identityHelper = identityHelper;
+
         }
 
         /// <summary>
@@ -46,11 +53,13 @@ namespace TrialsSystem.UsersService.Api.Controllers.v1
             [FromRoute] string userId,
             [FromQuery] int skip = 0,
             [FromQuery] int take = 20,
-            [FromHeader(Name = "roles")] string? roles = "",
             [FromQuery] string? email = null,
             [FromQuery] string? name = null,
             [FromQuery] string? surname = null)
         {
+
+            var roles = _identityHelper.Roles;
+
             _logger.LogInformation($"Get users by userId:{userId} with roles: {roles}");
 
             var response = await _mediator.Send(

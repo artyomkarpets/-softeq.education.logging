@@ -9,6 +9,7 @@ using TrialsSystem.UsersService.Api.Application.Validation;
 using TrialsSystem.UsersService.Api.Filters;
 using TrialsSystem.UsersService.Domain.AggregatesModel.UserAggregate;
 using TrialsSystem.UsersService.Infrastructure.Contexts;
+using TrialsSystem.UsersService.Infrastructure.Helpers;
 using TrialsSystem.UsersService.Infrastructure.Mapping;
 using TrialsSystem.UsersService.Infrastructure.Repositories;
 
@@ -32,11 +33,11 @@ namespace TrialsSystem.UsersService.Api
             builder.Services.AddControllers();
 
             UsersServiceDAL(builder);
-
+            builder.Services.AddScoped<IIdentityHelper, IdentityHttpRequestHelper>();
 
             builder.Services.AddFluentValidationAutoValidation();
             builder.Services.AddValidatorsFromAssemblyContaining<CreateUserRequestValidator>();
-
+            builder.Services.AddHttpContextAccessor();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
