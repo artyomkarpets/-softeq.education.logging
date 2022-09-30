@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialSystem.Shared.UsersSer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrialsSystem.ApiGatewayService", "TrialsSystem.ApiGatewayService", "{B079D41D-161F-4C71-B597-F3759ADDCB54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialsSystem.ApiGatewayService.Api", "TrialsSystem.ApiGatewayService\TrialsSystem.ApiGatewayService.Api\TrialsSystem.ApiGatewayService.Api.csproj", "{986291B1-AF42-40FF-90C7-0406AB3EC38C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialsSystem.ApiGatewayService.Api", "TrialsSystem.ApiGatewayService\TrialsSystem.ApiGatewayService.Api\TrialsSystem.ApiGatewayService.Api.csproj", "{986291B1-AF42-40FF-90C7-0406AB3EC38C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrialsSystem.ContentService", "TrialsSystem.ContentService", "{64C8A065-8077-4764-870B-2A67547B497F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -142,6 +144,7 @@ Global
 		{39DF58AF-E513-4B9F-8B72-903A17C821BB} = {AD48D38C-0A4C-43E8-BD18-9C9A34801C87}
 		{032FD965-E6B8-4A00-B1D6-6C58A20ED187} = {BA0509B7-2F0A-4A94-A216-4BDB05440AC5}
 		{986291B1-AF42-40FF-90C7-0406AB3EC38C} = {B079D41D-161F-4C71-B597-F3759ADDCB54}
+		{64C8A065-8077-4764-870B-2A67547B497F} = {B48F6B56-8931-45A1-B5E8-4D7BB308E2DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1BA20357-52AA-484F-BC0C-7AD5880BBE7B}
