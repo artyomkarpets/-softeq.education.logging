@@ -54,3 +54,12 @@ services:
       dockerfile: TrialsSystem.ApiGatewayService/Dockerfile
     depends_on:
       - um.identity.service
+
+  ua.content.service:
+    image:  ua.content.service
+    container_name:  ua.content.service
+    build:
+      context: .
+      dockerfile: UserAnswers/TrialsSystem.ContentService/Dockerfile
+    volumes:
+      - /data/content:/data/content
